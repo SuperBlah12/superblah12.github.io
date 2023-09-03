@@ -32,6 +32,8 @@ textarea {
     overflow: hidden;
     resize: none;
     box-shadow: none;
+	rows: 20;
+	cols: 80;
 }
 
 textarea[disabled] {
