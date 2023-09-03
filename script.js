@@ -424,7 +424,7 @@ function space(num) {
 }
 
 function placeInMid(text){
-	var ext = 80-text.length;
+	var ext = 73-text.length;
 	var left = Math.ceil(ext/2)
 	var right = ext-left;
 	return space(left)+text+space(right);
