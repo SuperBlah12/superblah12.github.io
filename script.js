@@ -232,7 +232,7 @@ async function processGameInput(input,rawInput){
 			pass[8] = true;
 			await updateGameScreen("[LOCATION HINT]");
 			break;
-		case "birth stones"
+		case "birth stones":
 		case "birthstones": //NINE
 			pass[9] = true;
 			await updateGameScreen("[LOCATION HINT]");
