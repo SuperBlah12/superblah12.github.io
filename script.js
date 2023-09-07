@@ -8,9 +8,9 @@ var DEBUG = true;
 var pass = [false,false,false,false,false,false,false,false,false,false,false,false,false]
 
 
-var displayKeys = ["$8!2V@N5$H03","Month$","8agels","l!ttletwelvetoes","2pointfivefour","GanVmede","M@gnesium","DragoNs","Disciple5","birthStones","cHristmas","Virg0","Blu3"];
+var displayKeys = ["D!YV@N5SH03S","Dozen","l!ttletwelvetoes","ganYmede","2.V4",,"m@gnesium","dragoNs","disciple5","birthStones","cHristmas","virg0","blu3","month$"];
 
-var FinalMessage = "SB12 VANS SHOE"
+var FinalMessage = "DIY VANS SHOES"
 //SB12 VANS SHOE
 
 var currentDir = "C:\\>"
@@ -190,22 +190,21 @@ async function processGameInput(input,rawInput){
 			else
 				await updateGameScreen("ERROR - DEBUG MODE NOT ACTIVE")
 			break;
-		case "$8!2V@N5SH03":
-		case "$8!2v@n5sh03":
+		case "$D!YV@N5SH03$":
+		case "d!yv@n5sh03$":
 			await drawVans()
 			break;
 		//PASSCODES
-		case "months": //ONE
+		case "dozen"://ONE
 			pass[1] = true;
 			await updateGameScreen("[LOCATION HINT].");
 			break;
-		case "bagel":
-		case "bagels": //TWO
-			pass[2] = true;
-			await updateGameScreen("[LOCATION HINT].");
-			break;
 		case "little twelvetoes":
-		case "littletwelvetoes": //THREE
+		case "littletwelvetoes": //TWO
+			pass[2] = true;
+			await updateGameScreen("[LOCATION HINT]");
+			break;
+		case "ganymede": //THREE
 			pass[3] = true;
 			await updateGameScreen("[LOCATION HINT]");
 			break;
@@ -215,64 +214,58 @@ async function processGameInput(input,rawInput){
 			pass[4] = true;
 			await updateGameScreen("[LOCATION HINT]");
 			break;
-		case "ganymede": //FIVE
+		case "magnesium": //FIVE
 			pass[5] = true;
 			await updateGameScreen("[LOCATION HINT]");
 			break;
-		case "magnesium": //SIX
+		case "dragon":
+		case "dragons": //SIX
 			pass[6] = true;
 			await updateGameScreen("[LOCATION HINT]");
 			break;
-		case "dragon":
-		case "dragons": //SEVEN
+		case "disciples": //SEVEN
 			pass[7] = true;
 			await updateGameScreen("[LOCATION HINT]");
 			break;
-		case "disciples": //EIGHT
+		case "birth stones":
+		case "birthstones": //EIGHT
 			pass[8] = true;
 			await updateGameScreen("[LOCATION HINT]");
 			break;
-		case "birth stones":
-		case "birthstones": //NINE
+		case "christmas": //NINE
 			pass[9] = true;
 			await updateGameScreen("[LOCATION HINT]");
 			break;
-		case "christmas": //TEN
+		case "virgo": //TEN
 			pass[10] = true;
 			await updateGameScreen("[LOCATION HINT]");
 			break;
-		case "virgo": //ELEVEN
+		case "blue": //ELEVEN
 			pass[11] = true;
 			await updateGameScreen("[LOCATION HINT]");
 			break;
-		case "blue": //TWELVE
+		case "months": //TWELVE
 			pass[12] = true;
-			await updateGameScreen("[LOCATION HINT]");
+			await updateGameScreen("[LOCATION HINT].");
 			break;
 		//SECONDARY QUESTIONS
-		case "dozen"://QUESTION 2
-			await updateGameScreen("ERROR - Further decryption needed.","QUERY> Which dozen do you put schmear on?");
-			break;
 		case "multiplication rock":
-		case "multiplication rocks"://QUESTION 3
+		case "multiplication rocks"://QUESTION 2
 			await updateGameScreen("ERROR - Further decryption needed.","REQUEST> Define corrupted song.");
+			break;
+		case "jupiter"://QUESTION 3
+			await updateGameScreen("ERROR - Further decryption needed.","QUERY> Which moon of Jupiter is the largest?");
 			break;
 		case "ruler"://QUESTION 4
 			await updateGameScreen("ERROR - Further decryption needed.","REQUEST> Convert 1 inch into Centimeters.");
 			break;
-		case "jupiter"://QUESTION 5
-			await updateGameScreen("ERROR - Further decryption needed.","QUERY> Which moon of Jupiter is the largest?");
-			break;
-		case "chromatic"://QUESTION 7
+		case "chromatic"://QUESTION 6
 			await updateGameScreen("ERROR - Further decryption needed.","QUERY> Scales are commonly found in Dungeons", "attached to what mythological creatures?");
 			break;
-		case "chromatic"://QUESTION 9?
-			await updateGameScreen("ERROR - Further decryption needed.","QUERY> Scales are commonly found in Dungeons", "attached to what mythological creatures?");
-			break;
-		case "zodiac"://QUESTION 11
+		case "zodiac"://QUESTION 10
 			await updateGameScreen("ERROR - Further decryption needed.","QUERY> September 7th, 2011 matches which sign?");
 			break;
-		case "color wheel"://QUESTION 12
+		case "color wheel"://QUESTION 11
 			await updateGameScreen("ERROR - Further decryption needed.","QUERY> Where on the wheel does this color land?", "HEXADECIMAL CODE #3155A9");
 			break;
 		case "quit":
