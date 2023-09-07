@@ -8,7 +8,7 @@ var DEBUG = true;
 var pass = [false,false,false,false,false,false,false,false,false,false,false,false,false]
 
 
-var displayKeys = ["D!YV@N5SH03S","Dozen","l!ttletwelvetoes","ganYmede","2.V4",,"m@gnesium","dragoNs","disciple5","birthStones","cHristmas","virg0","blu3","month$"];
+var displayKeys = ["D!YV@N5SH03S","Dozen","l!ttletwelvetoes","ganYmede","2.V4","m@gnesium","dragoNs","disciple5","birthStones","cHristmas","virg0","blu3","month$"];
 
 var FinalMessage = "DIY VANS SHOES"
 //SB12 VANS SHOE
