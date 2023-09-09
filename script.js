@@ -3,7 +3,7 @@ const submitForm = document.querySelector("#submitForm");
 const progressBar = document.querySelector("#progress");
 
 var GAME = false;
-var DEBUG = true;
+var DEBUG = false;
 
 var pass = [false,false,false,false,false,false,false,false,false,false,false,false,false]
 
@@ -197,56 +197,56 @@ async function processGameInput(input,rawInput){
 		//PASSCODES
 		case "dozen"://ONE
 			pass[1] = true;
-			await updateGameScreen("[LOCATION HINT].");
+			await updateGameScreen("My firewall keeps me warm when outside is cold.","Humans prefer puffy, red, cloud-based solutions.", "REQUEST> Check the Garment Repository.");
 			break;
 		case "little twelvetoes":
 		case "littletwelvetoes": //TWO
 			pass[2] = true;
-			await updateGameScreen("[LOCATION HINT]");
+			await updateGameScreen("Computer chips need to be kept cool to run.","QUERY> Is the same true for chocolate chips?","Your next clue will be found beTwix a few.");
 			break;
 		case "ganymede": //THREE
 			pass[3] = true;
-			await updateGameScreen("[LOCATION HINT]");
+			await updateGameScreen("ERROR: Corrupted card detected.","Card requires patching due to physical damage.","QUERY> How do you patch physical damage to a human?");
 			break;
 		case "twopointfivefour":
 		case "2.54":
 		case "two point five four": //FOUR
 			pass[4] = true;
-			await updateGameScreen("[LOCATION HINT]");
+			await updateGameScreen("NOTIFICATION: Static gateway detected with eternal blooms.","QUERY> What blossoms forever near the seldom-used portal?","Your next clue lies beneath the wooden testament.");
 			break;
 		case "magnesium": //FIVE
 			pass[5] = true;
-			await updateGameScreen("[LOCATION HINT]");
+			await updateGameScreen("ALERT: Memory storage unit detected.","QUERY> Where do past adventures woven in denim rest?","Clue hidden beneath memory patchwork.");
 			break;
 		case "dragon":
 		case "dragons": //SIX
 			pass[6] = true;
-			await updateGameScreen("[LOCATION HINT]");
+			await updateGameScreen("ALERT: Buzzing message in the refresh node.","QUERY> Where does joy buzz in Honey's realm?","Find your clue behind the bee's cheerful decree.");
 			break;
 		case "disciples": //SEVEN
 			pass[7] = true;
-			await updateGameScreen("[LOCATION HINT]");
+			await updateGameScreen("Data detected in ancient film archives.","A legendary dozen plans their grand escapade.","ERROR> No \"Oceans\" found in film?");
 			break;
 		case "birth stones":
 		case "birthstones": //EIGHT
 			pass[8] = true;
-			await updateGameScreen("[LOCATION HINT]");
+			await updateGameScreen("Patriotic data detected at primary access point.","QUERY> Where does the wooden uncle of freedom stand?","Clue is hidden with the flat statesman at hand.");
 			break;
 		case "christmas": //NINE
 			pass[9] = true;
-			await updateGameScreen("[LOCATION HINT]");
+			await updateGameScreen("ALERT: Minimal effort detected in clue placement strategy.","QUERY> Where has the laziest uncle hidden the next clue?","Investigate the mopping unit's retired bucket.");
 			break;
 		case "virgo": //TEN
 			pass[10] = true;
-			await updateGameScreen("[LOCATION HINT]");
+			await updateGameScreen("Archived birthday celebration data detected.","QUERY> Where is the royal memory of pink attire?","Look behind the portrait of birthday's past.");
 			break;
 		case "blue": //ELEVEN
 			pass[11] = true;
-			await updateGameScreen("[LOCATION HINT]");
+			await updateGameScreen("ALERT: Abandoned virtual paradise portal detected.","QUERY> Where is the gateway to your favorite virtual retreat?","Find your last clue where \"puthaira\" and reality meet.");
 			break;
 		case "months": //TWELVE
 			pass[12] = true;
-			await updateGameScreen("[LOCATION HINT].");
+			await updateGameScreen("NOTIFICATION: Final decryption sequence initiated.","QUERY> Can you identify the glitches in the code sequence?","Enter the anomaly characters to unlock your grand prize essence.");
 			break;
 		//SECONDARY QUESTIONS
 		case "multiplication rock":
@@ -327,9 +327,9 @@ async function drawGameScreen(){
 	screen += placeInMid("Enter passwords to unlock secrets")+"\n";
 	screen += placeInMid("Twelve in total")+"\n";
 	screen += "\n";
-	screen += placeInMid(" ") + "\n";
-	screen += placeInMid(" ") + "\n";
-	screen += placeInMid(" ") + "\n";
+	screen += placeInMid("Frequent logins detected at security node.") + "\n";
+	screen += placeInMid("QUERY> What blossoms under constant surveillance?") + "\n";
+	screen += placeInMid("Your first clue resides under the undying rose.") + "\n";
 	screen += "\n\n";
 	for (var i = 1;i<13;i++){
 		console.log(i)
