@@ -44,7 +44,7 @@
 				const alphabet = "abcdefghijklmnopqrstuvwxyz,.!?- ";
 				if (inputText && key) {
 					key = prepString(key);
-					inputText = replaceSpecialChars(inputText)
+					inputText = replaceSpecialChars(inputText);
                     console.log(inputText);
                     inputText = "-b-" + inputText + "-e-";
 					var encryptedText = applyOneTimePad(inputText, key, alphabet, true);
