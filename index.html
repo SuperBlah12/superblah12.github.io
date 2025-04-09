@@ -37,7 +37,8 @@
 		<button onclick="decrypt()">Decrypt</button>
 		<h2>Result:</h2>
 		<textarea id="result" readonly maxlength=5000000></textarea>
-		<script>
+	</body>
+	<script>
 			function encrypt() {
 				var inputText = document.getElementById('inputText').value;
 				var key = document.getElementById('key').value;
@@ -338,5 +339,4 @@
 				return str.match(regex).join('\n');
 			}
 		</script>
-	</body>
 </html>
