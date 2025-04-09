@@ -26,19 +26,19 @@ function decrypt() {
 	//    msgMark = inputText;
 	//    inputText = getPageText(msgMark);
 	//    key = getPageText(keyMark);
+	if (inputText && key) {
+		key = prepString(key);
+		inputText = prepString(inputText);
+		var decryptedText = applyOneTimePad(inputText, key, alphabet, false);
+		console.log(decryptedText);
+		decryptedText = extractSubstring(decryptedText);
+		decryptedText = reverseReplaceSpecialChars(decryptedText)
+		document.getElementById('result').value = decryptedText;
+	} else {
+		alert("Please enter both text & key.");
+	}
 }
-if (inputText && key) {
-	key = prepString(key);
-	inputText = prepString(inputText);
-	var decryptedText = applyOneTimePad(inputText, key, alphabet, false);
-	console.log(decryptedText);
-	decryptedText = extractSubstring(decryptedText);
-	decryptedText = reverseReplaceSpecialChars(decryptedText)
-	document.getElementById('result').value = decryptedText;
-} else {
-	alert("Please enter both text & key.");
-}
-}
+
 
 function applyOneTimePad(text, key, alphabet, encrypt) {
 	// Input validation
