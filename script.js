@@ -6,7 +6,7 @@ function encrypt() {
 		key = prepString(key);
 		inputText = replaceSpecialChars(inputText);
 		console.log(inputText);
-		inputText = "-b-" + inputText + "-e-";
+		inputText = "-!beg!-" + inputText + "-!end!-";
 		var encryptedText = applyOneTimePad(inputText, key, alphabet, true);
 		encryptedText = appendRandomLetters(encryptedText, 3200, alphabet);
 		//encryptedText = insertSpace(encryptedText, 80);
@@ -280,8 +280,8 @@ function appendRandomLetters(inputString, length, alphabet) {
 }*/
 
 function extractSubstring(inputString) {
-	const startMarker = "-b-";
-	const endMarker = "-e-";
+	const startMarker = "-!beg!-";
+	const endMarker = "-!end!-";
 
 	const startIndex = inputString.indexOf(startMarker);
 	const endIndex = inputString.indexOf(endMarker);
