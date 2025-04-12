@@ -216,8 +216,8 @@ function reverseReplaceSpecialChars(text) {
 		'!x!': 'X',
 		'!y!': 'Y',
 		'!z!': 'Z',
-		'-b-': '',
-		'-e-': ''
+		'-!beg!-': '',
+		'-!end!-': ''
 		// Add more reverse replacements as needed
 	};
 	let result = text;
