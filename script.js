@@ -7,8 +7,8 @@ function encrypt() {
 		inputText = replaceSpecialChars(inputText);
 		console.log(inputText);
 		inputText = "-!beg!-" + inputText + "-!end!-";
-		var encryptedText = applyOneTimePad(inputText, key, alphabet, true);
-		encryptedText = appendRandomLetters(encryptedText, 3200, alphabet);
+		var wrappedMessage = wrapRandomLetters(inputText, 3200, alphabet);
+		var encryptedText = applyOneTimePad(wrappedMessage, key, alphabet, true);
 		//encryptedText = insertSpace(encryptedText, 80);
 		document.getElementById('result').value = encryptedText;
 	} else {
@@ -235,7 +235,7 @@ function escapeRegExp(string) {
 	return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-function appendRandomLetters(inputString, length, alphabet) {
+function wrapRandomLetters(inputString, length, alphabet) {
 	if (inputString.length >= length) {
 		return inputString; // No need to append if already at or beyond the desired length
 	}
