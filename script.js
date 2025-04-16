@@ -240,7 +240,16 @@ function appendRandomLetters(inputString, length, alphabet) {
 		return inputString; // No need to append if already at or beyond the desired length
 	}
 
-	let result = inputString;
+	var need = length - inputString.length;
+
+	var front = Math.floor(Math.random() * need)
+
+	var result = "";
+	while (result.length < front) {
+		const randomIndex = Math.floor(Math.random() * alphabet.length);
+		result += alphabet.charAt(randomIndex);
+	}
+	result = result + inputString;
 	while (result.length < length) {
 		const randomIndex = Math.floor(Math.random() * alphabet.length);
 		result += alphabet.charAt(randomIndex);
